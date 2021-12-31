@@ -272,7 +272,7 @@ Code written in python has several benefits:
 * Supported by the range of different tutorials on the internet.
 * Easy to read (especially important for future project participants).
 
-After reading the project description, we understood this is a desktop application, not a website as it is connected by the localhost, so we can avoid using markup languages such as HTML. Since GUI requires importing several different libraries, python fits perfectly here.
+After reading the project description, we understood this is a desktop application, not a website as it is connected by the localhost/local network, so we can avoid using markup languages such as HTML. Since GUI requires importing several different libraries, python fits perfectly here.
 To create modern-looking GUI we will use widgets from PyQt5 framework which has a variety of them. Another vital component of our GUI is the graph area. Here we have several good libraries, but we choose matplotlib due to the following reasons: 
 * I used to work with this library in the first year of my studies.
 * The library interacts well with PyQt5, unlike other graphical libraries.
@@ -329,7 +329,7 @@ In general, apart from the modules mentioned above, everything was built from sc
 **candels**|	graphs.py|	CanvasLow method which plots a candlestick graph (box plot).
 **runEngine**|	orderWindow.py|	Process new orders data and runs the matching process.
 
-Some words about how GUI interacts with the server. With the help of python “socket” library, two computers connected to the localhost can exchange data. More carefully the procedure is described by my teammate who is responsible for this component. For now, let us study the following table containing a description of some important functions which are used for communication between server and GUI. All of them can be found in ```client.py``` module.
+Some words about how GUI interacts with the server. With the help of python “socket” library, two computers connected to the local network can exchange data. For now, let us study the following table containing a description of some important functions which are used for communication between server and GUI. All of them can be found in ```client.py``` module.
 
 Function name|	Description
 | ------ | ------ |

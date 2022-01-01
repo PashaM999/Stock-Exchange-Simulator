@@ -89,6 +89,7 @@ The Stock Exchange Simulator has the following architecture:
 ![](https://github.com/PashaM999/readme-media/blob/master/guidiag1.png?raw=true)
 
 <a name="server"/>
+
 ## The Server
 <p>
 One of the priorities which were set was the ability of the stock exchange to continue operating after any sudden<br>

@@ -5,6 +5,7 @@
 ##### 3. [Basic concepts,terms,definitions](#def)
 ##### 4. [Installation](#Installation)
 ##### 5. [Architecture](#Architecture)
+##### 6. [Server](#Server)
 ##### 6. [Demonstration](#Demonstration)
 ##### 7. [Selection of Technologies and Instruments](#tech)
 ##### 8. [Conclusion ](#Conclusion )
@@ -86,6 +87,13 @@ Installation via launcher: coming soon.
 ## Architecture
 The Stock Exchange Simulator has the following architecture:
 ![](https://github.com/PashaM999/readme-media/blob/master/guidiag1.png?raw=true)
+
+## The Server
+<p>
+One of the priorities which were set was the ability of the stock exchange to continue operating after any sudden<br>
+shutdown, another requirement was to make the database interpretable, which is why the decision was made to use SQL for all the transactions.<br>
+For communication between the devices, the server uses the ```socket``` library which enables us to set up the communication between devices on the local network with ease, even giving an opportunity to connect via the internet. The server is set up to receive commands from all the GUIs and the market maker, validate them and execute the correct transactions, only the server has access to the databases so false transactions will not be approved. It also manages all the logins and passwords which are stored encrypted in a special database.
+</p>
 
 ## Demonstration
 <p>
